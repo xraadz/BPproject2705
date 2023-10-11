@@ -27,7 +27,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:text="Enjoy Reading Our e-books"
-        android:textSize="14dp"
+        android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewUser" />
@@ -74,11 +74,12 @@
         android:id="@+id/menu1"
         android:layout_width="wrap_content"
         android:layout_height="65dp"
+        android:layout_marginStart="12dp"
         android:backgroundTint="#68FFB7"
         android:text="Book Kid"
         android:textColor="@color/black"
-        app:layout_constraintTop_toTopOf="@+id/linearLayout"
-        tools:layout_editor_absoluteX="16dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout" />
 
     <Button
         android:id="@+id/menu2"
@@ -131,56 +132,15 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="55dp"
-        android:layout_height="85dp"
-        android:layout_marginStart="16dp"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewBuku"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.043"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView12"
-        app:layout_constraintVertical_bias="0.038"
-        app:srcCompat="@drawable/book1" />
-
-    <TextView
-        android:id="@+id/textView13"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="420dp"
-        android:text="Emi's Beach Adventure"
-        android:textSize="14sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@id/imageView2"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textView14"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:text="Bla bla bla hahahaha aku sayang kamu juga sayang
-        tapi sayang kita berjauhan"
-        android:textSize="12sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/imageView2"
-        app:layout_constraintTop_toBottomOf="@id/textView13"
-        tools:layout_editor_absoluteX="87dp"
-        tools:layout_editor_absoluteY="439dp" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="2dp"
-        android:layout_marginEnd="28dp"
-        android:backgroundTint="#FE7E07"
-        android:text="Borrow"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textView14"
         app:layout_constraintVertical_bias="0.0" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
