@@ -11,9 +11,9 @@ class AboutActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_about)
 
-        val call:ImageView = findViewById(R.id.imageCall)
-        val web:ImageView = findViewById(R.id.imageWeb)
-        val location:ImageView = findViewById(R.id.imageLocation)
+        val call:ImageView = findViewById(R.id.ImageCall)
+        val web:ImageView = findViewById(R.id.ImageWeb)
+        val location:ImageView = findViewById(R.id.ImageLocation)
 
         //dial numbero
         call.setOnClickListener {

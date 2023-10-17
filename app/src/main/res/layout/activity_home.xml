@@ -107,8 +107,8 @@
 
     <Button
         android:id="@+id/menu4"
-        android:layout_width="95dp"
-        android:layout_height="58dp"
+        android:layout_width="wrap_content"
+        android:layout_height="65dp"
         android:layout_marginStart="87dp"
         android:layout_marginTop="16dp"
         android:backgroundTint="#FFE484"
@@ -118,7 +118,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <TextView
-        android:id="@+id/textView12"
+        android:id="@+id/textViewRecom"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -142,6 +142,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+        app:layout_constraintTop_toBottomOf="@id/textViewRecom"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="427dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

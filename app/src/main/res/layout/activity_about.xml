@@ -4,88 +4,105 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    tools:context=".AboutActivity"
     android:background="#FE7E07"
-    tools:context=".AboutActivity">
+    android:paddingRight="15dp"
+    android:paddingLeft="15dp"
+    android:paddingTop="25dp"
+    android:paddingBottom="25dp">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
-        android:elevation="1dp"
-        android:text="Find Us"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@+id/textView8"
-        tools:layout_editor_absoluteX="171dp" />
 
-    <ImageView
-        android:id="@+id/imageCall"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_marginEnd="76dp"
-        android:elevation="1dp"
-        app:layout_constraintEnd_toStartOf="@+id/imageWeb"
-        app:srcCompat="@drawable/baseline_local_phone_24"
-        tools:layout_editor_absoluteY="597dp" />
-
-    <ImageView
-        android:id="@+id/imageLocation"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="76dp"
-        android:elevation="1dp"
-        app:layout_constraintStart_toEndOf="@+id/imageWeb"
-        app:srcCompat="@drawable/baseline_location_on_24"
-        tools:layout_editor_absoluteY="597dp" />
-
-    <ImageView
-        android:id="@+id/imageWeb"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="32dp"
-        android:elevation="1dp"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:srcCompat="@drawable/baseline_language_24"
-        tools:layout_editor_absoluteX="189dp" />
-
-    <TextView
-        android:id="@+id/textAbout"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
-        android:elevation="1dp"
-        android:text="About Us"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@+id/imageView10"
-        tools:layout_editor_absoluteX="0dp" />
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        tools:layout_editor_absoluteX="-116dp"
+        tools:layout_editor_absoluteY="-5dp">
 
-    <ImageView
-        android:id="@+id/imageView8"
-        android:layout_width="454dp"
-        android:layout_height="603dp"
-        app:srcCompat="@drawable/waitoto"
-        tools:layout_editor_absoluteX="-22dp"
-        tools:layout_editor_absoluteY="112dp" />
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/read" />
 
-    <TextView
-        android:id="@+id/textView8"
-        android:layout_width="247dp"
-        android:layout_height="85dp"
-        android:layout_marginTop="52dp"
-        android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
-        app:layout_constraintTop_toBottomOf="@+id/textAbout"
-        tools:layout_editor_absoluteX="82dp" />
 
-    <ImageView
-        android:id="@+id/imageView10"
-        android:layout_width="match_parent"
-        android:layout_height="150dp"
-        app:srcCompat="@drawable/read"
-        tools:layout_editor_absoluteX="134dp"
-        tools:layout_editor_absoluteY="161dp" />
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
+            android:text="Find Us"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+        <ImageView
+            android:id="@+id/ImageCall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="64dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView9"
+            app:srcCompat="@drawable/baseline_local_phone_24" />
+
+        <ImageView
+            android:id="@+id/ImageWeb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/ImageLocation"
+            app:layout_constraintStart_toEndOf="@+id/ImageCall"
+            app:layout_constraintTop_toBottomOf="@+id/textView9"
+            app:srcCompat="@drawable/baseline_language_24" />
+
+        <ImageView
+            android:id="@+id/ImageLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="64dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView9"
+            app:srcCompat="@drawable/baseline_location_on_24" />
+
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="About Us"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="lorem ipsum curabitur vitae nunc sed velit dignissim sodales ut eu sem integer vitae justo eget magna fermentum iaculis eu non diam phasellus vestibulum lorem sed"
+            android:textAlignment="center"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
