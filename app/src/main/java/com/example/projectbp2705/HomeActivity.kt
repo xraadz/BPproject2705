@@ -22,12 +22,24 @@ class HomeActivity : AppCompatActivity() {
         //list data buku
         val data = ArrayList<BukuModel>()
         data.add(BukuModel(R.drawable.book1, "Emi's Beach Adventure",
-            "Lorem Ipsum Sit Amet"))
+            "Aku Sayang"))
         data.add(BukuModel(R.drawable.book2, "Ade's Adventure",
-            "Lorem Ipsum Sit Amet"))
+            "Kamu Juga Sayang"))
         data.add(BukuModel(R.drawable.book4, "Mermaid to Rescue",
-            "Lorem Ipsum Sit Amet"))
+            "Tapi Sayang Kita Berjauhan"))
 
+        data.add(BukuModel(R.drawable.buku1, "Dr. Seuss's Horse Museum",
+            "SuS banget kamu Doc"))
+        data.add(BukuModel(R.drawable.buku2, "Little Monkey",
+            "Dasar Monyet Kecil"))
+        data.add(BukuModel(R.drawable.buku3, "Best Friend",
+            "Besto Purento"))
+        data.add(BukuModel(R.drawable.buku4, "Lost in the Woods",
+            "Tersesat oh Tersesat"))
+        data.add(BukuModel(R.drawable.buku5, "A Kite for Moon",
+            "Layangan Terbang ke Bulan"))
+        data.add(BukuModel(R.drawable.buku6, "Story Book",
+            "Puteri Salju??"))
 
 
         //set adapter

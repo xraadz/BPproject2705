@@ -5,7 +5,7 @@ class Login {
     var password = ""
 
     fun loginCheck():Boolean{
-        if (username.equals("raditz")&&password.equals("amikom")){
+        if (username.equals("ditzu")&&password.equals("1234")){
             return true
         }else{
             return false

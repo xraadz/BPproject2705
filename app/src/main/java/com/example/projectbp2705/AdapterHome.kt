@@ -1,6 +1,7 @@
 package com.example.projectbp2705
 
 import android.view.LayoutInflater
+import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
@@ -10,8 +11,8 @@ class AdapterHome(private val listBuku:List<BukuModel>):
                         RecyclerView.Adapter<AdapterHome.ViewHolder>(){
 
     class ViewHolder(ItemView:View):RecyclerView.ViewHolder(ItemView){
-        val image:ImageView = itemView.findViewById(R.id.imageviewBook)
-        val title:TextView = itemView.findViewById(R.id.textViewTitle)
+        val image:ImageView = itemView.findViewById(R.id.imageGambar)
+        val title:TextView = itemView.findViewById(R.id.textViewTittle)
         val desc:TextView = itemView.findViewById(R.id.textViewDesc)
     }
 

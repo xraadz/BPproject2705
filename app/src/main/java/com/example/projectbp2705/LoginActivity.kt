@@ -17,22 +17,20 @@ class LoginActivity : AppCompatActivity() {
         val txtPassword: EditText = findViewById(R.id.editTextPassword)
         val logObj = Login()
 
-        logObj.username = txtUsername.text.toString()
-        logObj.password = txtPassword.text.toString()
-
+        //event
         btnLogin.setOnClickListener {
-            if (txtUsername.text.toString().equals("raditz") &&
-                txtPassword.text.toString().equals("amikom")) {
-                if (logObj.loginCheck() == true) {
-                    val intent = Intent(this, HomeActivity::class.java)
-                    startActivity(intent)
-                } else {
-                    Toast.makeText(
-                        this, "Login gagal, cek username dan password",
-                        Toast.LENGTH_SHORT
-                    ).show()
-                }
+            //input
+            logObj.username = txtUsername.text.toString()
+            logObj.password = txtPassword.text.toString()
+            //validasi login
+            if(logObj.loginCheck() == true ){
+                //call home activity
+                val intentHome = Intent(this,HomeActivity::class.java)
+                startActivity(intentHome)
+            }else{
+                Toast.makeText(this, "Username/Password salah", Toast.LENGTH_SHORT).show()
             }
         }
+
     }
 }

@@ -34,7 +34,7 @@
         android:backgroundTint="@color/white"
         android:ems="10"
         android:inputType="text"
-        android:text="Userame"
+        android:text=""
         android:layout_marginTop="50dp"
         android:layout_marginLeft="40dp"
         android:layout_marginRight="40dp"
@@ -50,7 +50,7 @@
         android:backgroundTint="@color/white"
         android:ems="10"
         android:inputType="textPassword"
-        android:text="abogoboga"
+        android:text=""
         android:textColor="#FFFFFF" />
 
     <Button
