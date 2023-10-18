@@ -14,7 +14,9 @@ class HomeActivity : AppCompatActivity() {
 
         val btnMore:Button = findViewById(R.id.menu4)
         val btnKid:Button = findViewById(R.id.menu1)
+        val btnSpace:Button = findViewById(R.id.menu3)
         val rvBuku:RecyclerView = findViewById(R.id.recyclerViewBuku)
+        val rvKunjung:RecyclerView = findViewById(R.id.recyclerViewKunjung)
 
         //set layout manager di recyclerview
         rvBuku.layoutManager = LinearLayoutManager(this)
@@ -44,15 +46,21 @@ class HomeActivity : AppCompatActivity() {
 
         //set adapter
         val adapter = AdapterHome(data)
+        val adapterKun = AdapterResponsi(data)
 
         //set adapter ke recycler view
         rvBuku.adapter = adapter
+        rvKunjung.adapter = adapterKun
 
         //action buttonu
         btnMore.setOnClickListener {
             val intent = Intent( this,AboutActivity::class.java)
             startActivity(intent)
         }
+
+        btnSpace.setOnClickListener {
+            val intent = Intent( this,ResponsiActivity::class.java)
+            startActivity(intent)
 
         btnKid.setOnClickListener {
             val intent = Intent( this,BookKidActivity::class.java)
